@@ -1,0 +1,48 @@
+/* 初始化 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 全局样式 */
+
+/* body样式 */
+/* 利用flex布局居中标题 */
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* .box样式 */
+.box {
+  text-align: center;
+  overflow: hidden;
+  animation: text-appear 1.5s ease-in-out forwards;
+}
+
+/* h1标题文字样式 */
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: .1rem;
+  text-indent: .1rem;
+  white-space: nowrap;
+}
+
+/* 标题突出显示文字 */
+.marked {
+  color: rgb(67, 98, 237);
+}
+
+/* 文字显现动画 */
+@keyframes text-appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 500px;
+  }
+}
