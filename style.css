@@ -19,14 +19,15 @@ body {
 
 /* .box样式 */
 .box {
+  width: 0;
   text-align: center;
   overflow: hidden;
-  animation: text-appear 1.5s ease-in-out forwards;
+  animation: text-appear 5s .5s infinite ease-out;
 }
 
 /* h1标题文字样式 */
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   letter-spacing: .1rem;
   text-indent: .1rem;
   white-space: nowrap;
@@ -39,10 +40,10 @@ h1 {
 
 /* 文字显现动画 */
 @keyframes text-appear {
-  from {
+  0% {
     width: 0;
   }
-  to {
+  100% {
     width: 500px;
   }
 }
